@@ -1,0 +1,119 @@
+.p1 {
+  font-size: 30px;
+  color:var(--main4-bg-color);
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.main_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 150px;
+  padding-top: 150px;
+  line-height: 50px;
+  background-color: var(--main1-bg-color);
+}
+.p2 {
+  font-size: 50px;
+  color: var(--main-bg-color);
+  width: 700px;
+  
+}
+.p3 {
+  
+  color:var(--main4-bg-color);
+
+  width: 700px;
+}
+.img {
+  width: 500px;
+  box-shadow: 10px 10px 10px var(--main-bg-color);
+}
+.img2 {
+  width: 500px;
+  box-shadow: 10px 10px 10px var(--main-bg-color);
+  margin-top: 50px;
+}
+body {
+  font-family: "Lora", serif;
+}
+.number_list {
+  
+  color:var(--main4-bg-color);
+  width: 700px;
+  
+}
+.dot_list {
+ 
+  color: var(--main4-bg-color);
+  width: 700px;
+ 
+}
+
+.p3, .number_list, .dot_list {
+    line-height: 1.6;
+    font-size: 17px; 
+  }
+  
+  .number_list li, .dot_list li {
+    margin-bottom: 10px; 
+  }
+  .img, .img2 {
+    transition: transform 0.3s ease;
+  }
+  
+  .img:hover, .img2:hover {
+    transform: scale(1.05); 
+  }
+ 
+   /* медіа-запити*/
+
+@media (max-width: 768px) {
+  .main_div {
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .p2 {
+    font-size: 40px; 
+  }
+  
+  .p1, .p3, .number_list, .dot_list {
+    width: 100%; 
+  }
+
+  .img, .img2 {
+    width: 100%;
+    box-shadow: none; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .main_div {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .p2 {
+    font-size: 30px;
+  }
+
+  .p3, .number_list, .dot_list {
+    font-size: 15px; 
+  }
+
+  .img, .img2 {
+    width: 100%; 
+  }
+
+  .p1, .p3, .number_list, .dot_list {
+    width: 100%; 
+  }
+}
+

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repair</title>
+    <link rel="stylesheet" href="styles/footer_header.css" />
+    <link rel="stylesheet" href="styles/building.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      jQuery(document).ready(function () {
+        jQuery(window).scroll(function () {
+          if (jQuery(this).scrollTop() > 50) {
+            jQuery("#myBtn").css("opacity", "1");
+          } else {
+            jQuery("#myBtn").css("opacity", "0");
+          }
+        });
+
+        jQuery("#myBtn").click(function () {
+          jQuery("body,html").animate(
+            {
+              scrollTop: 0,
+            },
+            800
+          );
+          return false;
+        });
+      });
+    </script>
+    <header class="header">
+      <button
+        onclick="window.location.href='main_page.html';"
+        class="main_button"
+      >
+        <b style="text-transform: uppercase">Буд</b> імперія
+      </button>
+      <div class="buttons">
+        <div class="menu-item">
+          <button class="b1">
+            Послуги &#9662;
+            <!-- Спецсимвол стрілка вниз -->
+          </button>
+          <ul class="submenu">
+            <li><a href="building.html">Будівництво</a></li>
+            <li><a href="repair.html">Ремонт</a></li>
+            <li><a href="design.html">Дизайн</a></li>
+          </ul>
+        </div>
+        <button onclick="window.location.href='projects.html';" class="b2">
+          Проєкти
+        </button>
+        <button onclick="window.location.href='contacts.html';" class="b3">
+          Контакти
+        </button>
+        <!-- Sign In button -->
+        <button id="signInBtn" class="b3">Увійти</button>
+      </div>
+      <div id="myBtn" title="Back to top">↑</div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <h2>Авторизація</h2>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <script src="jeneral.js"></script>
+  
+    <div class="main_div">
+      <div style="display: flex; flex-direction: column">
+        <!-- <p class="p1"><b>Будівництво</b></p> -->
+        <p class="p2">
+          <b>Ваш ідеальний простір починається з якісного ремонту</b>
+        </p>
+        <p class="p3">
+          У сучасному світі, де комфорт і естетика стають дедалі важливішими,
+          Будімперія пропонує широкий спектр послуг з ремонту, щоб перетворити
+          ваші мрії в реальність. Наша команда досвідчених спеціалістів готова
+          реалізувати проекти будь-якої складності, від невеликих квартир до
+          великих комерційних приміщень.
+        </p>
+        <p class="p1"><b>Чому обирають нас?</b></p>
+        <ol class="number_list">
+          <li>
+            <b style="color: rgb(255, 98, 0)">Професійний підхід.</b>
+            Ми маємо багаторічний досвід у сфері ремонту. Кожен проект ми
+            плануємо з урахуванням побажань замовника та технічних вимог, щоб
+            забезпечити найвищу якість виконання.
+          </li>
+          <li>
+            <b style="color: rgb(255, 98, 0)">Індивідуальний дизайн.</b> Ремонт
+            — це не лише зміна стін та підлог. Це створення унікального
+            простору, в якому ви будете почуватися комфортно. Наша команда
+            дизайнерів допоможе розробити проект, що максимально відображає ваш
+            стиль і потреби.
+          </li>
+
+          <li>
+            <b style="color: rgb(255, 98, 0)"
+              >Використання якісних матеріалів.</b
+            >
+            Ми працюємо тільки з перевіреними постачальниками, тому можемо
+            гарантувати, що всі використовувані матеріали відповідають
+            міжнародним стандартам якості та безпеки.
+          </li>
+          <li>
+            <b style="color: rgb(255, 98, 0)">Своєчасне виконання</b>
+            Ми цінуємо ваш час, тому всі роботи виконуємо в обумовлені терміни,
+            не знижуючи при цьому якості.
+          </li>
+        </ol>
+        <p class="p1"><b>Наші послуги з ремонту включають:</b></p>
+        <ul class="dot_list">
+          <li>
+            <b style="color: rgb(255, 98, 0)">Капітальний ремонт:</b>
+            відновлення старих приміщень до нового стану.
+          </li>
+          <li>
+            <b style="color: rgb(255, 98, 0)">Косметичний ремонт: </b>
+            Ми будуємо офіси, торгові центри та інші комерційні об'єкти, які
+            сприяють розвитку бізнесу.
+          </li>
+          <li>
+            <b style="color: rgb(255, 98, 0)">Ремонт квартир та будинків:</b>
+            повний спектр робіт для приватних замовників.
+          </li>
+          <li>
+            <b style="color: rgb(255, 98, 0)">Комерційний ремонт: </b> створення
+            функціональних і стильних офісних і торгових приміщень.
+          </li>
+          <li>
+            <b style="color: rgb(255, 98, 0)">Дизайн інтер'єру: </b> від ідеї до
+            реалізації — ми враховуємо всі деталі.
+          </li>
+        </ul>
+        <p class="p1"><b>Замовте ремонт у Будімперія!</b></p>
+
+        <p class="p3">
+          Не відкладайте на завтра те, що можна зробити сьогодні. Зв'яжіться з
+          нами для безкоштовної консультації та отримайте детальну інформацію
+          про наші послуги. Дозвольте нам перетворити ваш простір на ідеальне
+          місце для життя або роботи!
+        </p>
+      </div>
+
+      <div style="margin-left: 50px">
+        <img class="img" src="img/repair1.jpg" alt="#" />
+        <img class="img2" src="img/repair2.jpg" alt="#" />
+        <img class="img2" src="img/repair3.jpg" alt="#" />
+        <img class="img2" src="img/repair4.webp" alt="#" />
+      </div>
+    </div>
+
+    <footer class="footer"></footer>
+    
+  </body>
+</html>

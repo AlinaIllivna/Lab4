@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building</title>
+    <link rel="stylesheet" href="styles/footer_header.css" />
+    <link rel="stylesheet" href="styles/building.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      jQuery(document).ready(function () {
+        jQuery(window).scroll(function () {
+          if (jQuery(this).scrollTop() > 50) {
+            jQuery("#myBtn").css("opacity", "1");
+          } else {
+            jQuery("#myBtn").css("opacity", "0");
+          }
+        });
+
+        jQuery("#myBtn").click(function () {
+          jQuery("body,html").animate(
+            {
+              scrollTop: 0,
+            },
+            800
+          );
+          return false;
+        });
+      });
+    </script>
+    
+    
+    <header class="header">
+      <button
+        onclick="window.location.href='main_page.html';"
+        class="main_button"
+      >
+        <b style="text-transform: uppercase">Буд</b> імперія
+      </button>
+      <div class="buttons">
+        <div class="menu-item">
+          <button class="b1">
+            Послуги &#9662;
+            <!-- Спецсимвол стрілка вниз -->
+          </button>
+          <ul class="submenu">
+            <li><a href="building.html">Будівництво</a></li>
+            <li><a href="repair.html">Ремонт</a></li>
+            <li><a href="design.html">Дизайн</a></li>
+          </ul>
+        </div>
+        <button onclick="window.location.href='projects.html';" class="b2">
+          Проєкти
+        </button>
+        <button onclick="window.location.href='contacts.html';" class="b3">
+          Контакти
+        </button>
+        <!-- Sign In button -->
+        <button id="signInBtn" class="b3">Увійти</button>
+      </div>
+      <div id="myBtn" title="Back to top">↑</div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <h2>Авторизація</h2>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <script src="jeneral.js"></script>
+  
+    
+
+    <div class="main_div">
+      <div style="display: flex; flex-direction: column">
+        <!-- <p class="p1"><b>Будівництво</b></p> -->
+        <p class="p2">
+          <b>Наша компанія – ваш надійний партнер у будівництві</b>
+        </p>
+        <p class="p3">
+          З моменту заснування в 1944 році, <b>Будімперія</b> зарекомендувала
+          себе як одна з провідних будівельних компаній, що реалізує проекти
+          будь-якої складності. Ми пишаємося своїм внеском у розвиток
+          інфраструктури та створення якісного житла, комерційних і промислових
+          об'єктів.
+        </p>
+        <p class="p1"><b>Чому обирають нас?</b></p>
+        <ol class="number_list">
+          <li>
+            <b style="color: rgb(255, 98, 0)">Досвід і професіоналізм.</b>
+            Більше 75 років на ринку будівництва. Наші спеціалісти втілюють
+            найсучасніші будівельні технології, щоб задовольнити потреби кожного
+            клієнта.
+          </li>
+          <li>
+            <b style="color: rgb(255, 98, 0)">Висока якість робіт.</b> Ми
+            дотримуємося всіх будівельних стандартів, використовуючи лише
+            перевірені матеріали та сучасне обладнання.
+          </li>
+          <li>
+            <b style="color: rgb(255, 98, 0)">Повний спектр послуг.</b>Від
+            проєктування до здачі об'єкта в експлуатацію. Ми займаємося як
+            великими інфраструктурними проектами, так і приватними забудовами.
+          </li>
+          <li>
+            <b style="color: rgb(255, 98, 0)">Індивідуальний підхід.</b> Кожен
+            проект для нас — це унікальне рішення, яке відповідає вашим потребам
+            і побажанням.
+          </li>
+        </ol>
+        <p class="p1"><b>Наші послуги</b></p>
+        <ul class="dot_list">
+          <li>
+            <b style="color: rgb(255, 98, 0)"
+              >Будівництво житлових комплексів та котеджів.</b
+            >
+            Створюємо комфортне і сучасне житло, яке відповідає найвищим
+            стандартам якості.
+          </li>
+          <li>
+            <b style="color: rgb(255, 98, 0)">Комерційні та офісні будівлі.</b>
+            Ми будуємо офіси, торгові центри та інші комерційні об'єкти, які
+            сприяють розвитку бізнесу.
+          </li>
+          <li>
+            <b style="color: rgb(255, 98, 0)">Інфраструктурні проекти. </b
+            >Дороги, мости, комунікаційні мережі – все це робиться з надійністю
+            на десятиліття.
+          </li>
+          <li>
+            <b style="color: rgb(255, 98, 0)">Дизайн та ремонт.</b> Пропонуємо
+            повний спектр послуг від розробки дизайну інтер'єру до якісного
+            ремонту будь-якої складності.
+          </li>
+        </ul>
+        <p class="p1"><b>Наші гарантії</b></p>
+
+        <p class="p3">
+          Ми впевнені в якості наших робіт, тому надаємо гарантії на кожен
+          збудований об'єкт. Наша мета — зробити ваше будівництво безпечним,
+          зручним і довговічним!
+        </p>
+      </div>
+
+      <div style="margin-left: 50px">
+        <img class="img" src="img/service.jpg" alt="#" />
+        <img class="img2" src="img/build.jpg" alt="#" />
+        <img class="img2" src="img/build2.png" alt="#" />
+      </div>
+    </div>
+
+    <footer class="footer"></footer>
+   
+  </body>
+</html>

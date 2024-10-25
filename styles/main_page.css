@@ -1,0 +1,158 @@
+:root {
+  --main-bg-color: #ebf0f1; 
+}
+
+body {
+  font-family: "Lora", serif;
+}
+
+.m_div {
+  padding: 70px 0; /* Об'єднано вертикальні відступи */
+  line-height: 40px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.b_in_main1,
+.b_in_main2,
+.b_read_more {
+  padding: 20px 40px; /* Об'єднано відступи */
+  font-size: large;
+  cursor: pointer;
+}
+
+.b_in_main1 {
+  background-color: var(--main-bg-color);
+  margin-right: 30px;
+}
+
+.b_in_main1:hover {
+  background-color: rgba(0, 0, 0, 1);
+  color: var(--main-bg-color);
+}
+
+.b_in_main2 {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.b_in_main2:hover {
+  background-color: var(--main-bg-color);
+  color: black;
+}
+
+.main_picture {
+  box-shadow: 10px 10px 10px var(--main-bg-color);
+}
+
+.main_div2 {
+  padding: 70px 0; /* Об'єднано вертикальні відступи */
+  line-height: 40px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%; /* Ширина контейнера адаптируется */
+  max-width: 1000px; /* Максимальная ширина */
+  margin-left: auto; /* Центрирование контейнера */
+  margin-right: auto;
+}
+
+.p1_d2 {
+  font-size: 20px;
+}
+
+.p2_d2 {
+  color: var(--main-bg-color);
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.b_more {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.b_read_more {
+  background-color: var(--main-bg-color);
+  border-width: 0;
+}
+
+.b_read_more:hover {
+  background-color: white;
+  border-color: black;
+  border-width: 1px;
+}
+img {
+  max-width: 100%; /* Изображение не выходит за пределы родительского контейнера */
+  height: auto; /* Автоматическое сохранение пропорций */
+}
+
+/* Для екранів шириною до 768px (мобільні пристрої) */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Уменьшение базового размера шрифта */
+  }
+
+  .m_div {
+    flex-direction: column; /* Вертикальное расположение секций */
+    align-items: center; /* Центрирование всех элементов */
+    padding: 40px 0; /* Уменьшение вертикальных отступов */
+  }
+
+  .b_in_main1, .b_in_main2, .b_read_more {
+    width: 80%; /* Кнопки занимают 80% ширины экрана */
+    margin: 10px 0; /* Вертикальные отступы между кнопками */
+  }
+
+  .main_picture {
+    width: 100%; /* Изображение адаптируется под ширину экрана */
+    height: auto; /* Автоматическое сохранение пропорций */
+  }
+
+  .main_div2 {
+    flex-direction: column; /* Вертикальное выравнивание контента */
+    align-items: center;
+    text-align: center;
+  }
+
+  .p1_d2 {
+    font-size: 18px; /* Уменьшение размера шрифта */
+  }
+
+  .p2_d2 {
+    font-size: 30px; /* Уменьшение размера шрифта */
+    line-height: 35px;
+  }
+}
+
+
+/* Для екранів шириною до 480px (мобільні телефони) */
+@media (max-width: 480px) {
+  .m_div {
+    padding: 30px 0; /* Ещё больше уменьшаем отступы */
+  }
+
+  .b_in_main1, .b_in_main2, .b_read_more {
+    padding: 10px 20px; /* Уменьшаем отступы внутри кнопок */
+    width: 90%; /* Кнопки занимают 90% ширины экрана */
+    font-size: 16px; /* Уменьшаем размер шрифта кнопок */
+  }
+
+  .p1_d2 {
+    font-size: 16px; /* Ещё сильнее уменьшаем текст */
+  }
+
+  .p2_d2 {
+    font-size: 25px; /* Уменьшение размера заголовков */
+    line-height: 30px;
+  }
+
+  .main_div2 {
+    flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: center; /* Центрирование контента */
+  }
+}

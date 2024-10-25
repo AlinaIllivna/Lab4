@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building company</title>
+    <link rel="stylesheet" href="styles/main_page.css" />
+    <link rel="stylesheet" href="styles/footer_header.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <script>
+      jQuery(document).ready(function () {
+        jQuery(window).scroll(function () {
+          if (jQuery(this).scrollTop() > 50) {
+            jQuery("#myBtn").css("opacity", "1");
+          } else {
+            jQuery("#myBtn").css("opacity", "0");
+          }
+        });
+
+        jQuery("#myBtn").click(function () {
+          jQuery("body,html").animate(
+            {
+              scrollTop: 0,
+            },
+            800
+          );
+          return false;
+        });
+      });
+    </script>
+
+    <header class="header">
+      <button
+        onclick="window.location.href='main_page.html';"
+        class="main_button"
+      >
+        <b style="text-transform: uppercase">Буд</b> імперія
+      </button>
+      <div class="buttons">
+        <div class="menu-item">
+          <button class="b1">
+            Послуги &#9662;
+            <!-- Спецсимвол стрілка вниз -->
+          </button>
+          <ul class="submenu">
+            <li><a href="building.html">Будівництво</a></li>
+            <li><a href="repair.html">Ремонт</a></li>
+            <li><a href="design.html">Дизайн</a></li>
+          </ul>
+        </div>
+        <button onclick="window.location.href='projects.html';" class="b2">
+          Проєкти
+        </button>
+        <button onclick="window.location.href='contacts.html';" class="b3">
+          Контакти
+        </button>
+        <!-- Sign In button -->
+        <button id="signInBtn" class="b3">Увійти</button>
+      </div>
+      <div id="myBtn" title="Back to top">↑</div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <h2>Авторизація</h2>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <script src="jeneral.js"></script>
+
+    <div class="m_div">
+      <div>
+        <p style="font-size: 60px"><b>Ми будуємо надійно!</b></p>
+        <p style="font-size: 20px; margin-bottom: 50px">
+          Сумлінно працюємо для вас з 1944 року
+        </p>
+        <button
+          onclick="window.location.href='projects.html';"
+          class="b_in_main1"
+        >
+          Проєкти
+        </button>
+        <button
+          onclick="window.location.href='contacts.html';"
+          class="b_in_main2"
+        >
+          Контакти
+        </button>
+      </div>
+      <div>
+        <img class="main_picture" src="img/main_picture.jpg" alt="img" />
+      </div>
+    </div>
+
+    <div class="main_div2">
+      <div style="width: 700px; margin-right: 10px">
+        <p class="p1_d2"><b>Наша справа - будувати</b></p>
+        <p class="p2_d2"><b>Будімперія втілює масштабні проєкти</b></p>
+      </div>
+      <div class="b_more">
+        <button
+          onclick="window.location.href='projects.html';"
+          class="b_read_more"
+        >
+          Читати далі >>
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer"></footer>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+:root {
+  --main-bg-color: rgb(255, 98, 0);
+    --main1-bg-color: rgba(0, 0, 0, 0.8);
+  --main2-bg-color:rgba(136, 133, 133, 0);
+}
+
+body{
+  font-family: "Lora", serif;
+}
+
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.contact-form input {
+  background-color: var(--main1-bg-color);
+  color: white;
+}
+
+.contact-form textarea {
+  background-color: var(--main1-bg-color);
+  color: white;
+}
+
+.submit-button {
+  background-color: var(--main-bg-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+@media (max-width: 768px) {
+  .main_div {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 20px; /* Slightly reduce font size */
+  }
+
+  .submit-button {
+    font-size: 18px; /* Adjust button font size for better proportions */
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main_div {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 18px;
+  }
+
+  .submit-button {
+    font-size: 16px;
+    padding: 8px 10px;
+  }
+}
+
+.feedback-section {
+    background-color: rgba(255, 98, 0, 0.1); /* Легкий фон */
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.feedback-section h2 {
+    text-align: center;
+    color: var(--main-bg-color);
+    margin-bottom: 15px;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Відстань між відгуками */
+}
+
+.feedback-item {
+    background-color: var(--main1-bg-color);
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+.user-name {
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+
+.user-comment {
+    margin: 0;
+}
+
